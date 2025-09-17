@@ -103,7 +103,7 @@
                 // Simple template preserving original line breaks
                 title.innerHTML = 'I am <span>' + name + '</span>, <br>\n' +
                     (roles[0] ? 'a ' + roles[0] + ' <br>\n' : '') +
-                    (roles[1] ? '& frontend <br>\n' + roles[1] + ' based <br>\n' : '& frontend <br>\n') +
+                    (roles[1] ? '&  ' + roles[1] + ' based <br>\n' : '& frontend <br>\n') +
                     'in ' + location + '.';
             }
         }
