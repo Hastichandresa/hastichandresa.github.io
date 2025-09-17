@@ -21,7 +21,7 @@
         
         document.getElementById('article-script-content').innerHTML = output.html.script;
         document.getElementById('article-script-title').textContent = output.title;
-        document.title = 'Luther — ' + output.title;
+        document.title = 'Hasti — ' + output.title;
     }
 
     function showError(msg) {
