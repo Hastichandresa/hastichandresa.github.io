@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "file": "hello-world copy.md",
+      "title": "",
+      "description": ""
+    },
+    {
+      "file": "hello-world.md",
+      "title": "Test Post",
+      "description": "some description"
+    },
+    {
+      "file": "Big-Fish.fountain",
+      "title": "Big Fish",
+      "description": ""
+    }
+  ]
+}

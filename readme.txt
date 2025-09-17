@@ -123,10 +123,31 @@ Javascript Files:
  - Prism.js (https://prismjs.com/)
  - Basic Lightbox (https://basiclightbox.electerious.com/)
  - MailtoUI (https://mailtoui.com/)
+ - Marked (https://marked.js.org/)
 
 -------------------------------------------------------------------------------------------------------
 
 
 Thanks for downloading from Styleshout :)
 
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+BLOG USAGE (added):
+
+- Add Markdown or MDX files under `blogs/` (e.g., `blogs/my-first-post.md`).
+- Optional: create `blogs/index.json` to control ordering and metadata:
+
+```
+{
+  "posts": [
+    { "file": "my-first-post.md", "title": "My First Post", "description": "Intro" }
+  ]
+}
+```
+
+- Visit `blog.html` for the list and click through to `article.html?slug=my-first-post`.
+- The article title is taken from the first level-1 heading in the file.
 
