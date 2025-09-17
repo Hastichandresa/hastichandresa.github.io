@@ -53,28 +53,7 @@
 
         <!-- ## site header 
         ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">Luther.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="screenplay.html">Scripts</a></li>
-                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
+        <div data-include="header"></div>
 
 
         <!-- ## main content
@@ -89,12 +68,10 @@
                 <div class="row intro-content wide">
 
                     <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
+                        <div class="text-pretitle with-line" id="intro-pretitle">Hello World</div>
 
-                        <h1 class="text-huge-title">
-                            I am Luther, <br>
+                        <h1 class="text-huge-title" id="intro-title">
+                            I am <span data-config="siteName">Luther</span>, <br>
                             a digital designer <br>
                             & frontend <br> 
                             developer based <br>
@@ -102,12 +79,7 @@
                         </h1>
                     </div>
 
-                    <ul class="intro-social">
-                        <li><a href="#0">Behance</a></li>
-                        <li><a href="#0">Twitter</a></li>
-                        <li><a href="#0">Dribbble</a></li>
-                        <li><a href="#0">Instagram</a></li>
-                    </ul>
+                    <ul class="intro-social"></ul>
 
                 </div> <!-- end intro content -->
 
@@ -136,14 +108,8 @@
                             <h2 class="text-pretitle with-line" data-animate-el>
                                 About
                             </h2>
-                            <p class="attention-getter" data-animate-el>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                                velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
+                            <p class="attention-getter" id="about-text" data-animate-el></p>
+                            <a id="about-cv" href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
 
                         </div>
                     </div>
@@ -155,14 +121,7 @@
 
                         <h2 class="text-pretitle" data-animate-el>Expertise</h2>
 
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Visual Design</li>
-                            <li>Branding Identity</li>
-                            <li>UI Design</li>
-                            <li>Product Design</li>
-                            <li>Prototyping</li>
-                            <li>Illustration</li>
-                        </ul>
+                        <ul class="skills-list h1" id="expertise-list" data-animate-el></ul>
 
                     </div>
                 </div> <!-- end about-expertise -->
@@ -176,33 +135,7 @@
                             Experience
                         </h2>
 
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Dropbox</h3>
-                                    <h5 class="timeline__meta">Product Designer</h5>
-                                    <p class="timeline__timeframe">August 2019 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Microsoft</h4>
-                                    <h5 class="timeline__meta">Frontend Developer</h5>
-                                    <p class="timeline__timeframe">August 2016 - July 2019</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                        </div> <!-- end timeline -->
+                        <div class="timeline" id="experience-timeline" data-animate-el></div>
 
                     </div> <!-- end column -->
 
@@ -212,33 +145,7 @@
                             Education
                         </h2>
 
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">University of Life</h3>
-                                    <h5 class="timeline__meta">Master in Graphic Design</h5>
-                                    <p class="timeline__timeframe">April 2015</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">School of Cool Designers</h4>
-                                    <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                    <p class="timeline__timeframe">August 2012</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
-                            </div>
-    
-                        </div> <!-- end timeline -->
+                        <div class="timeline" id="education-timeline" data-animate-el></div>
                         
                     </div> <!-- end column -->
 
@@ -602,19 +509,13 @@
                     <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle">Reach me at</h3>
                         <p class="contact-links">
-                            <a href="mailto:sayhello@luther.com" class="mailtoui">sayhello@luther.com</a> <br>
-                            <a href="tel:+1975432345">+197 543 2345</a>
+                            <a href="#" class="mailtoui" data-config="email">sayhello@luther.com</a> <br>
+                            <a href="#" data-config="phone">+197 543 2345</a>
                         </p>
                     </div>
                     <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="#0">Behance</a></li>
-                            <li><a href="#0">Dribble</a></li>
-                            <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Instagram</a></li>
-                            <li><a href="#0">Github</a></li>
-                        </ul>
+                        <ul class="contact-social"></ul>
                     </div>
                     <div class="column lg-4 md-12 contact-block">
                         <a href="mailto:sayhello@luther.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
@@ -628,28 +529,16 @@
 
         <!-- ## footer
         ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>© Copyright Luther 2021</span> 
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">Themewagon</a></span>
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
-                    </a>
-                </div>
-            </div>
-
-        </footer> <!-- end s-footer -->
+        <div data-include="footer"></div>
 
     </div> <!-- end -s-pagewrap -->
 
 
     <!-- Java Script
     ================================================== -->
+    <script src="js/config.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/theme.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
