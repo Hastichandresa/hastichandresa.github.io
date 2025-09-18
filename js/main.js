@@ -159,10 +159,13 @@
                 * sectionId variable we are getting while looping through sections as 
                 * an selector
                 */
+                const link = document.querySelector(".main-nav a[href*=" + sectionId + "]");
+                if (!link || !link.parentNode) return;
+
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector(".main-nav a[href*=" + sectionId + "]").parentNode.classList.add("current");
+                    link.parentNode.classList.add("current");
                 } else {
-                    document.querySelector(".main-nav a[href*=" + sectionId + "]").parentNode.classList.remove("current");
+                    link.parentNode.classList.remove("current");
                 }
             });
         }
@@ -185,10 +188,13 @@
             blocks.forEach(function(current) {
 
                 const viewportHeight = window.innerHeight;
-                const triggerTop = (current.offsetTop + (viewportHeight * .2)) - viewportHeight;
+                const triggerTop = Math.max(current.offsetTop - viewportHeight * 0.15, 0);
                 const blockHeight = current.offsetHeight;
                 const blockSpace = triggerTop + blockHeight;
-                const inView = scrollY > triggerTop && scrollY <= blockSpace;
+
+                // Allow for a small buffer to trigger the animation
+                const buffer = 300; // Adjust this value as needed
+                const inView = (scrollY > triggerTop - buffer && scrollY <= blockSpace);
                 const isAnimated = current.classList.contains("ss-animated");
 
                 if (inView && (!isAnimated)) {
