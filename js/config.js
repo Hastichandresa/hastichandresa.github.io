@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
     phone: "+197 543 2345",
     profile: {
         name: "Hasti",
-        roles: ["writer", "storyteller", "filmmaker"],
+        roles: ["writer", "storyteller",],
         location: "",
         introPretitle: ""
     },
