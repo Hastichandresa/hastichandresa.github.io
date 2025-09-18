@@ -3,7 +3,7 @@
 window.SITE_CONFIG = {
     siteName: "Hasti",
     siteTag: "Hasti.",
-    description: "Designer & frontend developer portfolio and blog.",
+    description: "",
     author: "",
     email: "sayhello@luther.com",
     phone: "+197 543 2345",
