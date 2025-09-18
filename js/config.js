@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
     profile: {
         name: "Hasti",
         roles: ["writer", "storyteller",],
-        location: "",
+        location: "indore",
         introPretitle: ""
     },
     about: {
